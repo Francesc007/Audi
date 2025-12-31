@@ -5,9 +5,9 @@ import {createElement, Fragment} from 'react'
 
 export default defineConfig({
   name: 'default',
-  title: 'ALEX ROSETE | MBZ',
+  title: 'CARLOS SANTOS | AUDI',
 
-  projectId: 'nfhji1ic',
+  projectId: '0l351pox',
   dataset: 'production',
 
   plugins: [structureTool()],
@@ -21,14 +21,14 @@ export default defineConfig({
       layout: (props) => {
         return createElement(Fragment, null, 
           createElement('style', null, `
-            /* 1. PERSONALIZACIÓN DEL LOGO LOCAL (MERCEDES-BENZ) */
+            /* 1. PERSONALIZACIÓN DEL LOGO LOCAL (AUDI) */
             [data-testid="brand-logo"] {
               /* Usamos el logo local copiado a la carpeta static */
-              background-image: url('/static/Logo MB1.jpg') !important;
+              background-image: url('/static/Audi-Logo.png') !important;
               background-size: contain !important;
               background-repeat: no-repeat !important;
               background-position: center !important;
-              width: 40px !important; /* Ajustado para el nuevo logo */
+              width: 40px !important; 
               height: 40px !important;
               color: transparent !important;
             }
@@ -65,12 +65,12 @@ export default defineConfig({
               transition: border-left 0.2s ease !important;
             }
 
-            /* 4. CAMBIO DE COLOR "PUBLISHED" (DE VERDE A GRIS) */
+            /* 4. CAMBIO DE COLOR "PUBLISHED" (DE VERDE A ROJO AUDI) */
             [data-ui="Badge"][data-tone="positive"],
             [data-ui="StatusBadge"][data-tone="positive"] {
-              background-color: #eeeeee !important;
-              color: #333333 !important;
-              border: 1px solid #cccccc !important;
+              background-color: #BB0A30 !important;
+              color: #ffffff !important;
+              border: 1px solid #900018 !important;
             }
             
             [data-ui="DocumentPaneHeader"] [data-tone="positive"] {
