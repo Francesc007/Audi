@@ -116,7 +116,7 @@ const LandingPage = () => {
 
   const testimonios = deliveries.map(delivery => ({
     nombre: delivery.NombreCliente,
-    ubicacion: delivery.Ubicacion || "Riviera Maya",
+    ubicacion: delivery.Ubicacion || "Todo Oaxaca",
     texto: delivery.Descripcion,
     modelo: delivery.ModeloAuto || "Chevrolet",
     imagen: delivery.FotoCliente ? urlFor(delivery.FotoCliente).url() : null
@@ -216,7 +216,7 @@ const LandingPage = () => {
     {
       icon: <Shield className="w-8 h-8" />,
       titulo: "Entrega VIP a Domicilio",
-      descripcion: "Tu nuevo Chevrolet, Buick o GMC llega a tu puerta en Cancún o Riviera Maya."
+      descripcion: "Tu nuevo Chevrolet, Buick o GMC llega a tu puerta en todo Oaxaca."
     },
     {
       icon: <Award className="w-8 h-8" />,
@@ -259,7 +259,7 @@ const LandingPage = () => {
       <motion.nav 
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 border-t-2 border-t-gmcRed"
+        className="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-sm border-b border-gray-200/20 border-t-2 border-t-gmcRed"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24">
@@ -326,8 +326,8 @@ const LandingPage = () => {
             alt="Chevrolet Camaro Hero"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50"></div>
         </div>
 
         {/* Hero Content */}
@@ -862,9 +862,9 @@ const LandingPage = () => {
       <footer className="py-12 px-4 border-t border-gray-100 bg-white">
         <div className="max-w-7xl mx-auto text-center">
           <p className="font-brand text-2xl font-black mb-2 text-gray-900 tracking-tighter">Carlos Hernández</p>
-          <p className="text-gmcRed font-bold mb-4">Asesor de venta Senior | <span className="text-gmcRed">Chevrolet</span>, <span className="text-chevroletGold">Buick</span> y <span className="text-gmcRed">GMC</span></p>
+          <p className="text-gmcRed font-bold mb-4">Asesor de venta Senior | Chevrolet, Buick y GMC</p>
           <p className="text-sm text-gray-400 font-medium">
-            Cancún & Riviera Maya | © {new Date().getFullYear()} Todos los derechos reservados. 
+            Todo Oaxaca | © {new Date().getFullYear()} Todos los derechos reservados. 
             Las marcas Chevrolet, Buick y GMC son propiedad de General Motors.
           </p>
         </div>
